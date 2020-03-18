@@ -1,0 +1,109 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<!-- <link rel="stylesheet" href="{% static '/demoapp/basehtml.css' %}"> -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title></title>
+  </head>
+  <link rel="stylesheet" type="text/css" href="{% static '/demoapp/g(pro).css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static '/demoapp/g.css' %}">
+  <style>
+
+/* .bg-image {
+    background-image: url('https://crescent.education/wp-content/uploads/2017/09/computer-science-engineering.png');
+    background-position:center;
+    background-repeat: no-repeat;
+     filter: blur(8px);
+  -webkit-filter: blur(8px); } */
+
+.pro a{
+  color: red;
+}
+.pro h1{
+  color: red;
+}
+  .pro {
+  background-color: black; /* Fallback color */
+  background-color: black;opacity: 0.9;/* Black w/opacity/see-through */
+  color: white  ;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+  </style>
+  <body>
+  <nav class="navbar navbar-dark bg-dark">
+      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+      <div class="container">
+
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'index' %}">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#info">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ STATIC_URL }}static/demoapp/resume.pdf">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'demoapp:projects' %}">Projects</a>
+          </li>
+          <li class="nav-item">
+            <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
+          </li>
+        </ul>
+
+      </div>
+            </div>
+    </nav>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<div class="bg">
+<!-- <img src="https://images.unsplash.com/photo-1555940280-66bf87aa823d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" alt=""> -->
+</div>
+<div class="pro">
+
+
+    <h1><b><u>Projects</u></b></h1>
+    <br>
+    <p>I have made projects such as:</p>
+<br>
+      <li>Calculator</li>
+<br>
+      <li>Game(Rock Paper Scissors)</li>
+<br>
+    <!-- </ol> -->
+    <p>These projects are build through Python using GUI.</p>
+    <br>
+    <p>I have made a mini project named <b>Laundry Management system</b></p>
+    <p>In this i have used SMTP for mail generation, GUI, database(SQL lite)</p>
+    <br>
+    <a href="https://drive.google.com/open?id=1e1oXBCE9CVRMVJ73NRbXV-YzVNI63MN6"><b><u>Drive link of my projects.</u></b></a>
+</div>
+  </body>
+</html>
